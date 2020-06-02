@@ -1,0 +1,32 @@
+@mixin breakpoint($device) {
+    @if($device=='pc'){
+        @media screen and (max-width: $pc) {
+            @content;
+        }
+    }
+    @else if($device=='ipad-pro') {
+        @media screen and (max-width: $ipad-pro) {
+            @content;
+        }
+    }
+    @else if($device=='ipad') {
+        @media screen and (max-width: $ipad) {
+            @content;
+        }
+    }
+    @else if($device=='large-mobile') {
+        @media screen and (max-width: $large-mobile) {
+            @content;
+        }
+    }
+    @else if($device=='med-mobile') {
+        @media screen and (max-width: $med-mobile) {
+            @content;
+        }
+    }
+    @else if($device=='small-mobile') {
+        @media screen and (max-width: $small-mobile) {
+            @content;
+        }
+    }
+}
