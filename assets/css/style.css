@@ -114,6 +114,11 @@ header {
   header nav {
     padding-top: 5px;
     float: right; }
+    @media screen and (max-width: 425px) {
+      header nav li {
+        display: block;
+        padding: 10px 0;
+        text-align: center; } }
     header nav a {
       padding-left: 20px;
       color: white;
@@ -122,5 +127,36 @@ header {
         color: #0ac6fc; }
     header nav .menu__name--active {
       color: #0ac6fc; }
+    @media screen and (max-width: 425px) {
+      header nav {
+        width: 100%;
+        max-height: 0;
+        transition: .2s;
+        overflow: hidden;
+        z-index: 1; } }
+
+.hamburger {
+  display: none;
+  position: absolute;
+  z-index: initial;
+  top: 20px;
+  right: 5%;
+  bottom: initial;
+  left: initial;
+  text-indent: -9999px; }
+  .hamburger::before {
+    content: '\f0c9';
+    position: absolute;
+    z-index: initial;
+    top: 5px;
+    right: 36%;
+    bottom: initial;
+    left: initial;
+    font-family: "Fontawesome";
+    font-size: 24px;
+    text-indent: 0; }
+  @media screen and (max-width: 425px) {
+    .hamburger {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
