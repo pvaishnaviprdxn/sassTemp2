@@ -1,7 +1,8 @@
 header {
   width: 90%;
-  padding: 20px 0;
+  padding: 24px 0;
   margin: 0 auto;
+  @include position (absolute,1,75px,5%,initial,initial);
   background-color: $primary-color;
   
   .wrapper {
@@ -30,7 +31,7 @@ header {
 
     }
     a {
-      padding-left: 20px;
+      padding-left: 25px;
       color: $white;
       text-transform: $text-cap;
 
@@ -59,7 +60,7 @@ header {
   &::before {
     content: '\f0c9';
     @include position (absolute,initial,5px,36%,initial,initial);
-    font-family: $icon;
+    font-family: $icon-fam;
     font-size: $icon-size;
     text-indent: 0;
   }

@@ -1,10 +1,17 @@
 $primary-color:rgb(1, 84, 107);
 $secondary-color:rgb(10, 198, 252);
-$white:rgb(255, 255, 255);
-$primary-font:16px;
+$black:#000;
+$white: #fff;
+$transparent-color:transparent;
+$primary-font:40px;
 $text-cap:capitalize;
-$icon:"Fontawesome";
+$text-up:uppercase;
+$primary-font-fam:serif;
+$icon-fam:"Fontawesome";
 $icon-size:24px;
+$heading:75px;
+//banner
+$banner-pic:url('../images/background.png');
 
 //breakpoints
 $pc:1440px;

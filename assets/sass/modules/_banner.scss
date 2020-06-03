@@ -1,0 +1,52 @@
+%button-back {
+	background-color: $secondary-color;
+	border: 1px solid $transparent-color;
+}
+
+.banner {
+	padding-top: 320px;
+	padding-bottom: 200px;
+	background: $banner-pic;
+	
+  h2 {
+    color: $white;
+    font-family: $primary-font-fam;
+    font-size: $heading;
+		text-transform: $text-cap;
+		
+		@include breakpoint (large-mobile) { font-size: $primary-font }
+  }
+
+	p {
+		padding-top: 20px;
+		padding-right: 480px;
+		padding-bottom: 40px;
+		color: $white;
+		text-transform: $text-cap;
+
+		@include breakpoint (large-mobile) { padding:20px 0; }
+	}
+
+	a {
+		padding: 14px 28px;
+		margin-top: 20px;
+		margin-right: 20px;
+		@include border-radius(16px);
+		border: 1px solid $white;
+		color: $white;
+		text-transform: $text-up;
+
+		@include breakpoint (large-mobile) { display: table; } 
+
+		&.integer-active {
+			@extend %button-back;
+
+			&:hover {
+				background-color: $transparent-color;
+				border: 1px solid $white;
+			}
+		}
+
+		&:hover { @extend %button-back; }
+	}
+}

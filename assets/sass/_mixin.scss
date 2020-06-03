@@ -39,3 +39,25 @@
   bottom: $bottom;
   left: $left;
 }
+
+@mixin border-radius($value) {
+  border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+}
+
+@mixin display-table($content) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: $content;
+}
+
+@mixin linear-gradient($content, $color1, $color2) {
+	background: linear-gradient(to $content, $color1, $color2);
+	background: -webkit-linear-gradient($content, $color1, $color2);
+	background: -moz-linear-gradient($content, $color1, $color2);
+	background: -ms-linear-gradient($content, $color1, $color2);
+	background: -o-linear-gradient($content, $color1, $color2);
+}
