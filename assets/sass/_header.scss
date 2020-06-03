@@ -19,7 +19,16 @@ header {
   nav {
     padding-top: 5px;
     float: right;
+    
+    li {
 
+      @include breakpoint(large-mobile) {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+      } 
+
+    }
     a {
       padding-left: 20px;
       color: $white;
@@ -32,7 +41,29 @@ header {
       &--active { color: $secondary-color; }
     }
 
-    
-
+    @include breakpoint(large-mobile) { 
+      width: 100%;
+      max-height: 0;
+      transition: .2s;
+      overflow: hidden;
+      z-index: 1;
+    }
   }
+}
+//hamburger menu style
+.hamburger {
+  display: none;
+  @include position (absolute,initial,20px,5%,initial,initial);
+  text-indent: -9999px;
+
+  &::before {
+    content: '\f0c9';
+    @include position (absolute,initial,5px,36%,initial,initial);
+    font-family: $icon;
+    font-size: $icon-size;
+    text-indent: 0;
+  }
+
+  @include breakpoint(large-mobile) { display: block; }
+
 }
