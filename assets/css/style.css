@@ -207,9 +207,12 @@ header {
     padding-bottom: 40px;
     color: #fff;
     text-transform: capitalize; }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 1024px) {
       .banner p {
-        padding: 20px 0; } }
+        padding-right: 260px; } }
+    @media screen and (max-width: 768px) {
+      .banner p {
+        padding-right: 100px; } }
   .banner a {
     padding: 14px 28px;
     margin-top: 20px;
@@ -254,12 +257,12 @@ header {
   padding: 50px 0; }
   .contact-visit .methods li {
     margin-left: 8%; }
+    @media screen and (max-width: 768px) {
+      .contact-visit .methods li:last-child {
+        margin-left: 0; } }
     @media screen and (max-width: 1024px) {
       .contact-visit .methods li {
         margin-left: 2%; } }
-    @media screen and (max-width: 768px) {
-      .contact-visit .methods li {
-        margin-left: 5%; } }
     @media screen and (max-width: 425px) {
       .contact-visit .methods li {
         margin-left: 5px;
