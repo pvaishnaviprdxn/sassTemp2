@@ -111,6 +111,13 @@ h3 {
   text-align: center;
   text-transform: capitalize; }
 
+h4 {
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: serif;
+  font-size: 20px;
+  text-transform: capitalize; }
+
 header {
   width: 90%;
   padding: 24px 0;
@@ -428,5 +435,152 @@ article {
           font-family: Verdana, Tahoma, sans-serif;
           font-size: 14px;
           line-height: 1.5; }
+
+footer .buckle-cont .social, footer .buckle-cont .members, footer .buckle-cont .register, footer .buckle-cont .blog {
+  width: 20%;
+  padding-right: 75px; }
+
+footer {
+  background: #01546b; }
+  footer .buckle-cont {
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 425px) {
+      footer .buckle-cont {
+        display: block; } }
+    footer .buckle-cont .social p {
+      color: #fff;
+      font-family: Verdana, Tahoma, sans-serif;
+      line-height: 1.5; }
+      footer .buckle-cont .social p span {
+        text-transform: capitalize; }
+      footer .buckle-cont .social p a {
+        color: #0ac6fc; }
+    @media screen and (max-width: 1024px) {
+      footer .buckle-cont .social {
+        width: 23%;
+        padding-right: 35px; } }
+    @media screen and (max-width: 1024px) {
+      footer .buckle-cont .social {
+        width: 21%;
+        padding-right: 20px; } }
+    @media screen and (max-width: 425px) {
+      footer .buckle-cont .social {
+        width: 100%;
+        margin-top: 40px; } }
+    footer .buckle-cont .members li {
+      padding: 15px 0;
+      display: block;
+      border-bottom: 0.2px solid #347689; }
+      footer .buckle-cont .members li:first-child {
+        padding-top: 0; }
+      footer .buckle-cont .members li:last-child {
+        border-bottom: 0; }
+      footer .buckle-cont .members li a {
+        color: #0ac6fc; }
+    @media screen and (max-width: 1024px) {
+      footer .buckle-cont .members {
+        width: 23%;
+        padding-right: 35px; } }
+    @media screen and (max-width: 1024px) {
+      footer .buckle-cont .members {
+        width: 21%;
+        padding-right: 20px; } }
+    @media screen and (max-width: 425px) {
+      footer .buckle-cont .members {
+        width: 100%;
+        margin-top: 40px; } }
+    footer .buckle-cont .register p {
+      padding-bottom: 20px;
+      color: #fff;
+      font-family: Verdana, Tahoma, sans-serif; }
+    footer .buckle-cont .register form {
+      display: block; }
+      footer .buckle-cont .register form input[type="text"] {
+        width: 90%;
+        height: 28px;
+        padding: 5px 15px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: block;
+        background-color: #347689;
+        border: 0; }
+        footer .buckle-cont .register form input[type="text"]:focus {
+          background-color: #0ac6fc;
+          outline: transparent; }
+      footer .buckle-cont .register form input[type="submit"] {
+        padding: 12px 20px;
+        border: 1px solid transparent;
+        border-radius: 13px;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        -ms-border-radius: 13px;
+        -o-border-radius: 13px;
+        background-color: #0ac6fc;
+        color: #fff;
+        font-family: Verdana, Tahoma, sans-serif;
+        text-transform: uppercase; }
+        footer .buckle-cont .register form input[type="submit"]:hover {
+          border: 1px solid #fff;
+          background-color: transparent; }
+    @media screen and (max-width: 1024px) {
+      footer .buckle-cont .register {
+        width: 23%;
+        padding-right: 35px; } }
+    @media screen and (max-width: 1024px) {
+      footer .buckle-cont .register {
+        width: 21%;
+        padding-right: 20px; } }
+    @media screen and (max-width: 425px) {
+      footer .buckle-cont .register {
+        width: 100%;
+        margin-top: 40px; } }
+    footer .buckle-cont .blog {
+      padding-right: 0vh; }
+      footer .buckle-cont .blog .posts li {
+        padding-bottom: 20px; }
+        footer .buckle-cont .blog .posts li:first-child {
+          border-bottom: 0.2px solid #347689; }
+        footer .buckle-cont .blog .posts li:last-child {
+          padding-top: 20px; }
+        footer .buckle-cont .blog .posts li a {
+          padding-bottom: 10px;
+          display: block;
+          font-family: serif;
+          font-size: 20px;
+          color: #0ac6fc;
+          text-transform: capitalize; }
+        footer .buckle-cont .blog .posts li span {
+          color: #fff;
+          font-size: 12px;
+          text-transform: capitalize; }
+        footer .buckle-cont .blog .posts li p {
+          padding: 10px 0;
+          color: #fff; }
+      @media screen and (max-width: 1024px) {
+        footer .buckle-cont .blog {
+          width: 23%;
+          padding-right: 35px; } }
+      @media screen and (max-width: 1024px) {
+        footer .buckle-cont .blog {
+          width: 21%;
+          padding-right: 20px; } }
+      @media screen and (max-width: 425px) {
+        footer .buckle-cont .blog {
+          width: 100%;
+          margin-top: 40px; } }
+  footer .copyright {
+    padding: 30px 0;
+    background-color: #026a8a; }
+    footer .copyright span {
+      color: #fff;
+      font-family: Verdana, Tahoma, sans-serif;
+      text-transform: capitalize; }
 
 /*# sourceMappingURL=style.css.map */
