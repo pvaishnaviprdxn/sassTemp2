@@ -24,7 +24,9 @@
 		color: $white;
 		text-transform: $text-cap;
 
-		@include breakpoint (large-mobile) { padding:20px 0; }
+		@include breakpoint (ipad-pro) { padding-right:260px; }
+
+		@include breakpoint (ipad) { padding-right:100px }
 	}
 
 	a {
