@@ -1,5 +1,6 @@
 .sapien {
-  margin-top: 100px;
+  padding-top: 80px;
+  background-color: $off-white-color;
 
   .overlay {
     padding: 80px 0;
@@ -80,21 +81,21 @@
     }
 
     figure {
-        margin-right: 60px;
-        float: right;
-          
-        @include breakpoint (ipad-pro) { margin-right: 60px; }
+      margin-right: 60px;
+      float: right;
+        
+      @include breakpoint (ipad-pro) { margin-right: 60px; }
 
-        @include breakpoint (large-mobile) {
-            margin-right: 0;
-            float: none;
-            text-align: center;
-        }
+      @include breakpoint (large-mobile) {
+        margin-right: 0;
+        float: none;
+        text-align: center;
+      }
 
-        img {
-        @include breakpoint (ipad-pro) { width: 280px; }
-        @include breakpoint (ipad) { width: 210px; }
-        }
+      img {
+      @include breakpoint (ipad-pro) { width: 280px; }
+      @include breakpoint (ipad) { width: 210px; }
+      }
     }
   }
 }

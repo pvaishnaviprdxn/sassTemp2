@@ -22,7 +22,6 @@ footer {
 
         span { text-transform: $text-cap; }
         a { color: $secondary-color; }
-
       }
 
       @include breakpoint(ipad-pro) {
@@ -38,7 +37,6 @@ footer {
         width: 100%;
         margin-top: 40px;
       }
-
     }
 
     .members {  
@@ -96,8 +94,6 @@ footer {
             background-color: $secondary-color;
             outline: transparent;
           }
-
-
         }
 
         input[type="submit"] {
@@ -115,6 +111,7 @@ footer {
           }
         }
       }
+
       @include breakpoint(ipad-pro) {
         width: 23%;
         padding-right: 35px;
@@ -152,7 +149,7 @@ footer {
             text-transform: $text-cap;
           }
 
-          span {
+          .day {
             color: $white;
             font-size: $small-font;
             text-transform: $text-cap;
