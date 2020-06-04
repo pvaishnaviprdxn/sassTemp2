@@ -1,28 +1,100 @@
 .sapien {
-    padding-top: 80px;
-    margin-top: 100px;
-    ///@include position (absolute,initial,initial,initial,initial,initial);
+  margin-top: 100px;
+
+  .overlay {
+    padding: 80px 0;
     background: url(../images/01.png);
     color: white;
     text-align: center;
+  }
 
-    span {
-        font-size: $small-font;
+  .sapien__content {
+    padding:50px 0;
+    margin-top: 50px;
+    background-color: $white;
+    text-align: left;
+    color: $black;
+    display: block;
+
+    .about {
+      width: 52%;
+      display: inline-block;
+      padding: 0 65px;
+
+      @include breakpoint (ipad-pro) { width: 42%; }
+
+      @include breakpoint (large-mobile) {
+          width: 80%;
+          padding: 0 30px;
+      }
+
+      .subject {
+        text-transform: $text-cap;
+        font-size: $icon-size;
+        font-family: $primary-font-fam;
+
+        @include breakpoint (ipad-pro) { font-size: 20px;  }
+      }
+
+      p {
+        padding-top: 20px;
+        line-height: 1.5;
+      }
+
+      .sapien-logs {
+        margin-top: 30px;
+
+        li {
+          width: 50%;
+          min-height: 25px;
+          margin: 10px 0;
+          display: block;
+          float: left;
+
+        @include breakpoint (large-mobile) { 
+          width: 100%;
+          float: none;
+        }
+              
+          &:nth-child(odd) {
+            margin-left: 0;
+            clear: left;
+          }
+
+          .nums {
+            padding: 4px 8px;
+            @include border-radius(16px);
+            background: $secondary-color;
+            color: $white;
+
+            &:hover { background-color: $tertiary-color; }
+          }
+
+          .log-text { 
+            padding-left: 5px;
+            
+            @include breakpoint (ipad-pro) { padding-left: 0; }
+          }
+        }
+      }
     }
 
-    .sapien__content {
-        padding:50px 0;
-        background-color: $white;
-        text-align: left;
-        color: $black;
+    figure {
+        margin-right: 60px;
+        float: right;
+          
+        @include breakpoint (ipad-pro) { margin-right: 60px; }
 
-        .about {
-            width: 60%;
-            float: left;
+        @include breakpoint (large-mobile) {
+            margin-right: 0;
+            float: none;
+            text-align: center;
         }
-        figure {
-            width: 40%;
-            float: left;
+
+        img {
+        @include breakpoint (ipad-pro) { width: 280px; }
+        @include breakpoint (ipad) { width: 210px; }
         }
     }
+  }
 }
