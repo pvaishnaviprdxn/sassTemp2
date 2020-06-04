@@ -31,3 +31,11 @@ h3 {
   text-align: center;
   text-transform: $text-cap;
 }
+
+h4 {
+  margin-bottom: 50px;
+  color: $white;
+  font-family: $primary-font-fam;
+  font-size: $text-size;
+  text-transform: $text-cap;
+}
