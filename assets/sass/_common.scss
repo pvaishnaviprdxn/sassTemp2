@@ -20,3 +20,14 @@ li {
   width: 90%; 
   margin: 0 auto;
 }
+
+.cap { text-transform: $text-cap; }
+.up { text-transform: $text-up; }
+
+h3 {
+  padding-top: 5px;
+  font-size: $icon-size;
+  font-family: $primary-font-fam;
+  text-align: center;
+  text-transform: $text-cap;
+}

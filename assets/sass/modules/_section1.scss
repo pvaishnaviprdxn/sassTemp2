@@ -1,0 +1,121 @@
+//placeholder for icons
+
+%hide-text {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+%icons {
+  width: 24px;
+  padding: 12px 13px;
+  border-radius: 26px;
+  float: right;
+  background: $icon-color;
+  color: $secondary-color;
+  font-size: $icon-size;
+  font-family: $icon-fam;
+  text-align: center;
+  text-indent: 0;
+}
+
+%icons-active {
+  background-color: $secondary-color;
+  color: $white;
+}
+
+.contact-visit {
+  background-color: $tertiary-color;
+  padding: 50px 0;
+
+  .methods {
+    li {
+      margin-left: 8%;
+
+      @include breakpoint (ipad-pro) { margin-left: 2%; }
+      @include breakpoint (ipad) { margin-left: 5%; }
+
+      @include breakpoint (large-mobile) {
+        margin-left: 5px;
+        margin-top: 20px;
+      }
+
+      &:first-child { margin-left: 0; }
+      .method-text {
+        padding-top:5px;
+        padding-left: 15px;
+        float: right;
+
+        @include breakpoint (ipad) { font-size: 14px; }
+        
+        .way {
+          color: $white;
+          font-weight: $weight;
+        }
+
+        .details {
+          padding-top: 5px;
+          display: block;
+          color: $white;
+
+          .location { color: $secondary-color; }
+        }
+      }
+    }
+  }
+}
+
+.call {
+  @extend %hide-text;
+  &--mod {
+    &::after {
+      content: '\f095';
+      @extend %icons;
+
+      &:hover {
+        @extend %icons-active;
+      }
+    }
+  }
+}
+
+.email {
+  @extend %hide-text;
+  &--mod {
+    &::after {
+      content: '\f0e0';
+      @extend %icons;
+
+      &:hover {
+        @extend %icons-active;
+      }
+    }
+  }
+} 
+
+.time {
+  @extend %hide-text;
+  &--mod {
+    &::after {
+      content: '\f017';
+      @extend %icons;
+      
+      &:hover {
+        @extend %icons-active;
+      }
+    }
+  }
+}
+
+.address {
+  @extend %hide-text;
+  &--mod {
+    &::after {
+      content: '\f041';
+      @extend %icons;
+      
+      &:hover {
+        @extend %icons-active;
+      }
+    }
+  }
+}
