@@ -1,0 +1,75 @@
+article {
+  padding: 100px 0;
+  text-align: center;
+  background-color: $off-white-color;
+  .stories {
+    margin-top: 40px;
+    @include display-flex(flex);
+
+    @include breakpoint (large-mobile) { display: block; }
+
+    li {
+      width: 30%;
+      text-align: left;
+
+      @include breakpoint (large-mobile) { 
+        width: 100%;
+        margin-top: 50px;
+        display: block;
+      }
+      
+      &:nth-child(even) { 
+        margin-right: 57px;
+        margin-left: 57px;
+
+        @include breakpoint (large-mobile) { 
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+
+      .about-story {
+        margin-top: 35px;
+
+        .usericon {
+          text-indent: -9999px;
+          display: inline-block;
+
+          &::before {
+            content: '\f007';
+            float: right;
+            font-family: $icon-fam;
+            text-indent: 0;
+          }
+        }
+
+        .admin { 
+          padding: 0 10px;
+          border-right: 1px solid $beige;
+          color: $secondary-color;
+          text-transform: $text-cap;
+        }
+
+        .date {
+          padding: 0 10px;
+          font-size: $med-font;
+          text-transform: $text-cap;
+        }
+
+        .story-name {
+          padding: 10px 0;
+          color: $secondary-color;
+          font-family: $primary-font-fam;
+          font-size: $text-size;
+          text-transform: $text-cap;
+        }
+
+        p {
+          font-family: $basic;
+          font-size: $med-font;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

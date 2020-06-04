@@ -48,7 +48,7 @@
   -o-border-radius: $value;
 }
 
-@mixin display-table($content) {
+@mixin display-flex($content) {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: $content;
