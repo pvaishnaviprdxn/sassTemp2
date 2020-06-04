@@ -31,8 +31,11 @@
     li {
       margin-left: 8%;
 
+      &:last-child { 
+        @include breakpoint (ipad) { margin-left: 0; }
+      }
+      
       @include breakpoint (ipad-pro) { margin-left: 2%; }
-      @include breakpoint (ipad) { margin-left: 5%; }
 
       @include breakpoint (large-mobile) {
         margin-left: 5px;
