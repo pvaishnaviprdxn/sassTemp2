@@ -98,6 +98,19 @@ li {
   width: 90%;
   margin: 0 auto; }
 
+.cap {
+  text-transform: capitalize; }
+
+.up {
+  text-transform: uppercase; }
+
+h3 {
+  padding-top: 5px;
+  font-size: 24px;
+  font-family: serif;
+  text-align: center;
+  text-transform: capitalize; }
+
 header {
   width: 90%;
   padding: 24px 0;
@@ -208,5 +221,91 @@ header {
     .banner a.integer-active:hover {
       background-color: transparent;
       border: 1px solid #fff; }
+
+.call, .email, .time, .address {
+  display: inline-block;
+  text-indent: -9999px; }
+
+.call--mod::after, .email--mod::after, .time--mod::after, .address--mod::after {
+  width: 24px;
+  padding: 12px 13px;
+  border-radius: 26px;
+  float: right;
+  background: #3589a2;
+  color: #0ac6fc;
+  font-size: 24px;
+  font-family: "Fontawesome";
+  text-align: center;
+  text-indent: 0; }
+
+.call--mod:hover::after, .email--mod:hover::after, .time--mod:hover::after, .address--mod:hover::after {
+  background-color: #0ac6fc;
+  color: #fff; }
+
+.contact-visit {
+  background-color: #026a8a;
+  padding: 50px 0; }
+  .contact-visit .methods li {
+    margin-left: 8%; }
+    @media screen and (max-width: 1024px) {
+      .contact-visit .methods li {
+        margin-left: 2%; } }
+    @media screen and (max-width: 768px) {
+      .contact-visit .methods li {
+        margin-left: 5%; } }
+    @media screen and (max-width: 425px) {
+      .contact-visit .methods li {
+        margin-left: 5px;
+        margin-top: 20px; } }
+    .contact-visit .methods li:first-child {
+      margin-left: 0; }
+    .contact-visit .methods li .method-text {
+      padding-top: 5px;
+      padding-left: 15px;
+      float: right; }
+      @media screen and (max-width: 768px) {
+        .contact-visit .methods li .method-text {
+          font-size: 14px; } }
+      .contact-visit .methods li .method-text .way {
+        color: #fff;
+        font-weight: 600; }
+      .contact-visit .methods li .method-text .details {
+        padding-top: 5px;
+        display: block;
+        color: #fff; }
+        .contact-visit .methods li .method-text .details .location {
+          color: #0ac6fc; }
+
+.call--mod::after {
+  content: '\f095'; }
+
+.email--mod::after {
+  content: '\f0e0'; }
+
+.time--mod::after {
+  content: '\f017'; }
+
+.address--mod::after {
+  content: '\f041'; }
+
+.sapien {
+  padding-top: 80px;
+  margin-top: 100px;
+  background: url(../images/01.png);
+  color: white;
+  text-align: center; }
+  .sapien span {
+    font-size: 12px; }
+  .sapien .sapien__content {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: left;
+    color: #000; }
+    .sapien .sapien__content .about {
+      width: 60%;
+      float: left; }
+    .sapien .sapien__content figure {
+      width: 40%;
+      float: left; }
 
 /*# sourceMappingURL=style.css.map */
