@@ -289,23 +289,87 @@ header {
   content: '\f041'; }
 
 .sapien {
-  padding-top: 80px;
-  margin-top: 100px;
-  background: url(../images/01.png);
-  color: white;
-  text-align: center; }
-  .sapien span {
-    font-size: 12px; }
+  margin-top: 100px; }
+  .sapien .overlay {
+    padding: 80px 0;
+    background: url(../images/01.png);
+    color: white;
+    text-align: center; }
   .sapien .sapien__content {
     padding: 50px 0;
+    margin-top: 50px;
     background-color: #fff;
     text-align: left;
-    color: #000; }
+    color: #000;
+    display: block; }
     .sapien .sapien__content .about {
-      width: 60%;
-      float: left; }
+      width: 52%;
+      display: inline-block;
+      padding: 0 65px; }
+      @media screen and (max-width: 1024px) {
+        .sapien .sapien__content .about {
+          width: 42%; } }
+      @media screen and (max-width: 425px) {
+        .sapien .sapien__content .about {
+          width: 80%;
+          padding: 0 30px; } }
+      .sapien .sapien__content .about .subject {
+        text-transform: capitalize;
+        font-size: 24px;
+        font-family: serif; }
+        @media screen and (max-width: 1024px) {
+          .sapien .sapien__content .about .subject {
+            font-size: 20px; } }
+      .sapien .sapien__content .about p {
+        padding-top: 20px;
+        line-height: 1.5; }
+      .sapien .sapien__content .about .sapien-logs {
+        margin-top: 30px; }
+        .sapien .sapien__content .about .sapien-logs li {
+          width: 50%;
+          min-height: 25px;
+          margin: 10px 0;
+          display: block;
+          float: left; }
+          @media screen and (max-width: 425px) {
+            .sapien .sapien__content .about .sapien-logs li {
+              width: 100%;
+              float: none; } }
+          .sapien .sapien__content .about .sapien-logs li:nth-child(odd) {
+            margin-left: 0;
+            clear: left; }
+          .sapien .sapien__content .about .sapien-logs li .nums {
+            padding: 4px 8px;
+            border-radius: 16px;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            -ms-border-radius: 16px;
+            -o-border-radius: 16px;
+            background: #0ac6fc;
+            color: #fff; }
+            .sapien .sapien__content .about .sapien-logs li .nums:hover {
+              background-color: #026a8a; }
+          .sapien .sapien__content .about .sapien-logs li .log-text {
+            padding-left: 5px; }
+            @media screen and (max-width: 1024px) {
+              .sapien .sapien__content .about .sapien-logs li .log-text {
+                padding-left: 0; } }
     .sapien .sapien__content figure {
-      width: 40%;
-      float: left; }
+      margin-right: 60px;
+      float: right; }
+      @media screen and (max-width: 1024px) {
+        .sapien .sapien__content figure {
+          margin-right: 60px; } }
+      @media screen and (max-width: 425px) {
+        .sapien .sapien__content figure {
+          margin-right: 0;
+          float: none;
+          text-align: center; } }
+      @media screen and (max-width: 1024px) {
+        .sapien .sapien__content figure img {
+          width: 280px; } }
+      @media screen and (max-width: 768px) {
+        .sapien .sapien__content figure img {
+          width: 210px; } }
 
 /*# sourceMappingURL=style.css.map */
